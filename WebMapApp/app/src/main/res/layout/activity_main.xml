@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/webbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#7BB9F2"
+        android:text="Webpage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWeb" />
+
+    <Button
+        android:id="@+id/mapbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="68dp"
+        android:backgroundTint="#7BB9F2"
+        android:text="Geocoder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMap" />
+
+    <TextView
+        android:id="@+id/textWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="174dp"
+        android:layout_marginEnd="20dp"
+        android:text="Click to open the website"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textMap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="174dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:text="Click to open a MapGoogle"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mapbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textWeb"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="11dp"
+        android:text="Type the name of the page you want to open!"
+        app:layout_constraintBottom_toTopOf="@+id/webEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/webbtn" />
+
+    <EditText
+        android:id="@+id/webEdit"
+        android:layout_width="318dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="Website"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/geocoderEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoText" />
+
+    <EditText
+        android:id="@+id/geocoderEdit"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="33dp"
+        android:ems="10"
+        android:hint="Longitude"
+        android:inputType="number|textPersonName|numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/webEdit" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="57dp"
+        android:backgroundTint="#7BB9F2"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
